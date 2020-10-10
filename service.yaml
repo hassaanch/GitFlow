@@ -13,3 +13,8 @@ spec:
     - port: 5000
       protocol: TCP
       targetPort: 88
+    
+    - port: 600
+      protocol: TCP
+      targetPort: 80
+      #some of the comments which are not commit in featureX
