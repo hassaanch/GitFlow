@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: altova-svc
+  namespace: prod
+  labels:
+    app: altova-svc
+spec:
+  type: LoadBalancer
+  selector:
+    app: altova-api
+  ports:
+    - port: 5000
+      protocol: TCP
+      targetPort: 80
