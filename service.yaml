@@ -4,11 +4,11 @@ metadata:
   name: altova-ip
   namespace: prod
   labels:
-    app: altova-ip 
+    app: altova-ip
 spec:
   type: LoadBalancer
   selector:
-    app: altova-api
+    app: altova-service
   ports:
     - port: 5000
       protocol: TCP
@@ -17,3 +17,4 @@ spec:
     - port: 600
       protocol: TCP
       targetPort: 80
+      #some of the comments which are not commit in featureX
