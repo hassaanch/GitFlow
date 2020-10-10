@@ -16,5 +16,6 @@ spec:
     
     - port: 600
       protocol: TCP
-      targetPort: 80
+      targetPort: 90
       #some of the comments which are not commit in featureX
+      #Changing done  in Release
